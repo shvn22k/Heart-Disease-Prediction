@@ -191,7 +191,7 @@ button {
             const form = document.getElementById('myinputs');
             const inputArray = [];
     
-            // Loop through each input in the form
+            // loop through each input in the form
             form.querySelectorAll('input, select').forEach(element => {
                 if (element.type === 'radio' || element.type === 'checkbox') {
                     if (element.checked) {
@@ -229,10 +229,10 @@ button {
         }       
 
         document.querySelector('button[type="submit"]').addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default form submission
+            event.preventDefault(); // prevent default form submission
             const inputArray = getFormInputs();
     
-            console.log('Input Array:', inputArray); // For debugging
+            console.log('Input Array:', inputArray); // for debugging
             fetch('/predict', {
                 method: 'POST',
                 headers: {
@@ -240,10 +240,10 @@ button {
                 },
                 body: JSON.stringify({ form_array: inputArray })
             })
-            .then(response => response.json())  // Use .json() instead of .text() to parse JSON response
+            .then(response => response.json())  // use .json() instead of .text() to parse JSON response
             .then(data => {
                 document.getElementById('predicted_result').textContent = data.prediction_text;
-                // Reset the form to allow new input
+                // reset the form to allow new input
                 document.getElementById('myinputs').reset();
             })
             .catch(error => {
@@ -252,23 +252,6 @@ button {
             });
 
                 
-            // fetch('/predict', {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json',
-            //     },
-            //     body: JSON.stringify({ form_array: inputArray })
-            // })
-            // .then(response => response.json())
-            // .then(html => {
-            //     document.getElementById('predicted_result').textContent = data.prediction_text;
-            //     // Reset the form to allow new input
-            //     document.getElementById('myinputs').reset();
-            // })
-            // .catch(error => {
-            //     console.error('Error:', error);
-            //     document.getElementById('predicted_result').textContent = 'An error occurred while making the prediction.';
-            // });
         });
     </script>
     
