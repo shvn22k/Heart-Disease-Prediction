@@ -44,6 +44,7 @@ Deployed to web using render: [Deployment link](https://heart-disease-prediction
 ### Notes
 - Inputs: Make sure to enter **realistic values** for the best results. The application assumes sensible inputs for accurate predictions.
 - Model Accuracy: The model's predictions are based on historical data and may not always reflect current health conditions. Current model accuracy is 90.78%.
+- Site responsiveness: Site may be very slow due to inactivity on the site (as per free account hosting on render service).
 
 ### License
 This project is licensed under the MIT License. See the LICENSE file for details.
