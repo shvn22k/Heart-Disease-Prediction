@@ -46,6 +46,7 @@ Deployed to web using render: [Deployment link](https://heart-disease-prediction
 - Model Accuracy: The model's predictions are based on historical data and may not always reflect current health conditions. Current model accuracy is 90.78%.
 - Site responsiveness: Site may be very slow due to inactivity on the site (as per free account hosting on render service).
 - Jupyter notebook- The trained model was exported from my kaggle notebook which can be found here: [Heart Disease Prediction and EDA](https://github.com/shvn22k/kaggle-notebooks/blob/main/heart-disease-prediction.ipynb)
+- Branches- ```main``` is the web deployment on render using html and css scripts and ```stream``` is the streamlit deployment (better).
 
 ### License
 This project is licensed under the MIT License. See the LICENSE file for details.
