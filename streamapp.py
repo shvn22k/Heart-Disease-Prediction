@@ -27,7 +27,7 @@ st_depression = st.number_input("ST Depression:", min_value=0.0, max_value=10.0,
 st_slope = st.selectbox("ST Depression Slope:", options=[
     "Unsloping", "Flat", "Downsloping"
 ])
-vessels = st.number_input("Number of Major Vessels:", min_value=0, max_value=3, value=0)
+vessels = st.number_input("Number of Major Vessels:", min_value=0, max_value=4, value=0)
 thallium = st.selectbox("Thallium Scan Results:", options=[
     "Normal", "Fixed Defect", "Reversible Defect"
 ])
