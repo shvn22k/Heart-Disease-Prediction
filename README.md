@@ -23,7 +23,7 @@ This project leverages a pre-trained machine learning model to predict heart dis
 - **`requirements.txt`**: Lists Python dependencies for the project.
 
 ### Deployment
-Deployed to web using Streamlit cloud: [Deployment link]()
+Deployed to web using Streamlit cloud: [Deployment link](https://heart-disease-prediction-by-shvn22k.streamlit.app/)
 
 ### Run locally
 1. Download the repo and create a conda environment.
@@ -40,6 +40,7 @@ Deployed to web using Streamlit cloud: [Deployment link]()
 - Inputs: Make sure to enter **realistic values** for the best results. The application assumes sensible inputs for accurate predictions.
 - Model Accuracy: The model's predictions are based on historical data and may not always reflect current health conditions. Current model accuracy is 90.78%.
 - Jupyter notebook- The trained model was exported from my kaggle notebook which can be found here: [Heart Disease Prediction and EDA](https://github.com/shvn22k/kaggle-notebooks/blob/main/heart-disease-prediction.ipynb)
+- Branches- ```main``` is the web deployment on render using html and css script and ```stream``` is the streamlit deployment (better)
 
 ### License
 This project is licensed under the MIT License. See the LICENSE file for details.
